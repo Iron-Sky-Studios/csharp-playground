@@ -1,0 +1,4 @@
+jobs:
+  workflowA-calls-workflowB:
+    uses: Iron-Sky-Studios/reusable-workflows/.github/workflows/lint.yaml@main
+    secrets: inherit # pass all secrets

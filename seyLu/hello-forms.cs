@@ -3,12 +3,12 @@ using System.Windows.Forms;
 
 public class HelloWorld : Form
 {
-    static public void Main ()
+    public static void Main()
     {
-        Application.Run (new HelloWorld ());
+        Application.Run(new HelloWorld());
     }
 
-    public HelloWorld ()
+    public HelloWorld()
     {
         Text = "Hello Mono World";
     }

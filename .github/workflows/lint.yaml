@@ -10,5 +10,11 @@ on:
 
 jobs:
   lint:
-    uses: Iron-Sky-Studios/reusable-workflows/.github/workflows/lint-csharp.yaml@b09197b32ea2c1bb6a7f9cf450813d6ff1809e6a # main
-    secrets: inherit
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
+
+    - name: Linting C#
+      uses: Iron-Sky-Studios/reusable-workflows/.github/workflows/lint-csharp.yaml@b09197b32ea2c1bb6a7f9cf450813d6ff1809e6a # main
+      secrets: inherit

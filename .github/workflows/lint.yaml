@@ -8,13 +8,12 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  packages: read
+  statuses: write
+
 jobs:
   lint:
-    permissions:
-      contents: read
-      packages: read
-      statuses: write
-
-    - name: Linting C#
-      uses: Iron-Sky-Studios/reusable-workflows/.github/workflows/lint-csharp.yaml@b09197b32ea2c1bb6a7f9cf450813d6ff1809e6a # main
-      secrets: inherit
+    uses: Iron-Sky-Studios/reusable-workflows/.github/workflows/lint-csharp.yaml@b09197b32ea2c1bb6a7f9cf450813d6ff1809e6a # main
+    secrets: inherit

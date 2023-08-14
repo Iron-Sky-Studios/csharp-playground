@@ -10,5 +10,5 @@ on:
 
 jobs:
   lint:
-    uses: Iron-Sky-Studios/reusable-workflows/.github/workflows/lint.yaml@4897c1d50ac4db33bd999bfeb65d14c8720b044d # main
+    uses: Iron-Sky-Studios/reusable-workflows/.github/workflows/lint-csharp.yaml@4897c1d50ac4db33bd999bfeb65d14c8720b044d # main
     secrets: inherit

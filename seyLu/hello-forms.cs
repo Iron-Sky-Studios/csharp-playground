@@ -5,7 +5,7 @@ public class HelloWorld : Form
 {
     public static void Main()
     {
-        Applica  tion.Run(new HelloWorld());
+        Application.Run(new HelloWorld());
     }
 
     public HelloWorld()

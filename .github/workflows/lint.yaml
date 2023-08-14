@@ -1,4 +1,14 @@
+name: Lint C#
+
+on:
+  push:
+      branches:
+        - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  workflowA-calls-workflowB:
-    uses: Iron-Sky-Studios/reusable-workflows/.github/workflows/lint.yaml@main
-    secrets: inherit # pass all secrets
+  lint:
+    uses: Iron-Sky-Studios/reusable-workflows/.github/workflows/lint.yaml@4897c1d50ac4db33bd999bfeb65d14c8720b044d # main
+    secrets: inherit

@@ -1,8 +1,8 @@
 {
    "tasks": [{
       "name": "Run csharpier",
-      "command": "dotnet",
-      "args": [ "csharpier", "${staged}" ],
+      "command": "dotnet-csharpier",
+      "args": [ "${staged}" ],
       "include": [ "**/*.cs" ]
   }]
 }

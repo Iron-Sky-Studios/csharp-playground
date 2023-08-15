@@ -20,4 +20,6 @@
 #echo 'Husky.Net is awesome!'
 
 dotnet husky run
-echo "pre-commit exit code: $?"
+exit_code=$?
+
+exit $exit_code

@@ -7,5 +7,6 @@ C# Playground
 
 ```bash
 dotnet tool install husky
+dotnet tool install csharpier -g
 dotnet husky install
 ```

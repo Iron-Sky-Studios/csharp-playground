@@ -9,13 +9,13 @@ namespace Giraffe
   {
     static void Main(string[] args)
     {
-      string phrase = "Giraffe Academy";
-      char grade = 'A';
-      int age = 30;
-      double gpa = 3.3;
-      bool isMale = false;
+      string phrase = "Giraffe Academy" + " is cool";
+      Console.WriteLine(phrase.Length);
 
-      Console.WriteLine(false);
+      char[] helloChars = { 'h', 'e', 'l', 'l', 'o' };
+      string helloStr = new string(helloChars);
+
+      Console.WriteLine(helloStr.Substring(1, 3));
 
       Console.ReadLine();
     }
